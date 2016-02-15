@@ -1,42 +1,79 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
-<head>
-    <title>Bennu Chan</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="author" content="Bennu Chan">
-    <meta name="Copyright" content="Bennu Chan版权所有">
-    <meta name="description" content="个人网站;个人分享">
-    <meta name="keywords" content="个人网站;Bennu Chan">
-    <link href="assets/css/index.css" rel="stylesheet" type="text/css"/>
-</head>
-<body>
-    <div id="nav">
-        <div style="color:Blue;margin-left:100px;margin-top:40px;"><h1>Bennu</h1></div>
-        <ul>
-            <li><a href="index.html">主页</a></li>
-            <li><a href="docs/arcticle.html">人工开物</a>
-            <span class="menu">
-            <a href="#">Python</a>
-            <a href="#">Linux</a>
-            <a href="#">Others</a>
-            </span>
-            </li>
-            <li><a href="index.html">随笔</a></li>
-            <li><a href="docs/live.html">小品</a><span class="menu"><a href="#">"无聊"的系列</a><a href="#">小说</a><a href="#">杂文</a></span></li>
-            <li><a href="docs/hole.html">某天</a><span class="menu"><a href="#">随口一说</a><a href="#">随笔一记</a></span></li>
-            <li><a href="docs/share.html">我</a><span class="menu"><a href="#">关于我</a><a href="#">联系我</a></span></li>
-            <li><a href="docs/about.html">三部曲 <span style="color:blue;">Beta</span></a><div class="menu"><a href="#">范公园</a><a href="#">...</a></div></li>
-        </ul>
-    </div>
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>测试</title>
 
-    <div style="margin-left:100px;margin-top:100px;"><img src="assets/img/fan.png" width=200px height=200px/>
-        <p style="color:white">
-            前言：最迷人最不可思议的莫过于我们神秘的宇宙本身。本人愚钝，并不能独立思考洞察宇宙的一二，但又何其幸生在了这个时代。相对论与量子力学的提出都已百年，越来越多的理论也正在完善中，我得以在前人铺好的路上略窥一二。写这些文章，算是对自己思维锻炼的一个记录，也算是满足自己好奇心的一点努力的见证。</p>
-<p style="color:white">
-我并不能保证我写的都是正确的。出错，也许是我的逻辑不够缜密，没有完全理解前人智慧的结晶。还也许，我们思考的一切所基于的那个前提，便是错的。甚至，也许宇宙没有真相……
-        </p>
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
-    </div>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
 
-</body>
+ <!--导航栏开始-->
+<nav class="navbar navbar-default">
+<div class="container">
+
+ <div class="navbar-header"> <!--导航头开始-->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Bennu</a>
+</div><!--导航头结束-->
+
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><!--折叠导航栏-->
+<ul class="nav navbar-nav">
+<li role="presentation"><a href="#">主页</a></li>
+
+  <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">天工开物<span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="#">Python</a></li>
+      <li><a href="#">Linux</a></li>
+      <li><a href="#">Others</a></li>
+    </ul>
+  </li>
+
+  <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">夕瓜<span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="#">随笔</a></li>
+      <li><a href="#">小品</a></li>
+      <li><a href="#">某天</a></li>
+    </ul>
+  </li>
+
+  <li role="presentation"><a href="#">我</a></li>
+  <li role="presentation"><a href="#">三部曲</a></li>
+</ul></div></div></nav>
+<!--导航栏结束-->
+
+<div class="jumbotron"><div class="container">
+  <h1>Hello, world!</h1>
+  <p>...</p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">了解更多</a></p>
+
+  <h2>最近更新</h2>
+  <p>前言：最迷人最不可思议的莫过于我们神秘的宇宙本身。本人愚钝，并不能独立思考洞察宇宙的一二，但又何其幸生在了这个时代。相对论与量子力学的提出都已百年，越来越多的理论也正在完善中，我得以在前人铺好的路上略窥一二。写这些文章，算是对自己思维锻炼的一个记录，也算是满足自己好奇心的一点努力的见证。</p>
+<p>
+我并不能保证我写的都是正确的。出错，也许是我的逻辑不够缜密，没有完全理解前人智慧的结晶。还也许，我们思考的一切所基于的那个前提，便是错的。甚至，也许宇宙没有真相……</p>
+  </div></div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="assets/js/jquery-2.2.0.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
 </html>
