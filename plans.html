@@ -24,7 +24,7 @@ li:hover .dropdown-menu{display:block;}
   <body>
 
  <!--导航栏开始-->
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
 <div class="container">
 
  <div class="navbar-header"> <!--导航头开始-->
@@ -46,6 +46,7 @@ li:hover .dropdown-menu{display:block;}
     <ul class="dropdown-menu">
       <li><a href="#">Python</a></li>
       <li><a href="#">Linux</a></li>
+      <li role="separator" class="divider"></li>
       <li><a href="#">Others</a></li>
     </ul>
   </li>
@@ -63,8 +64,13 @@ li:hover .dropdown-menu{display:block;}
   <li role="presentation" class="active"><a href="plans.html">三部曲</a></li>
 </ul></div></div></nav>
 <!--导航栏结束-->
+<br/><br/><br/>
 
 <div class="jumbotron"><div class="container">
+  <div class="alert alert-warning alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>提醒！</strong> 范公园是三部曲之一，页面正在更新中。
+  </div>
   <h1>范公园</h1>
   <p>...</p>
   <p><a class="btn btn-primary btn-lg" href="#" role="button">了解更多</a></p>
