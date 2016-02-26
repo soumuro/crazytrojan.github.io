@@ -1,0 +1,58 @@
+hr{width:50%;}
+.masthead
+{
+    background: url(../img/index_cover.jpg) repeat center center;
+    text-align:center;
+}
+.masthead h1
+{
+    font-size: 60px;
+    color: #dff;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -2px;
+}
+.masthead h2
+{
+    color:#fff;
+    font-weight: 200;
+    font-size: 18px;
+}
+.update h1
+{
+    text-align:center;
+    font-size: 20px;
+    color: #1E90FF;
+    font-weight: 500;
+}
+#update_img img{width:30px;height:30px;}
+
+@media screen and (min-width:768px)
+{
+    #update_img img{width:50px;height:50px;}
+    .masthead h1
+    {
+        font-size: 90px;
+    }
+    .masthead h2
+    {
+        font-size: 24px;
+    }
+    .update h1
+    {
+        font-size: 40px;
+    }
+}
+@media screen and (min-width:992px)
+{
+    .masthead h1
+    {
+        font-size: 150px;
+    }
+    .masthead h2
+    {
+        font-size: 30px;
+        font-weight: 500;
+    }
+}
+
