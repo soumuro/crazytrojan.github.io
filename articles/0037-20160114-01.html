@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="author" content="Bennu"/>
+    <meta name="keywords" content="Bennu 个人博客"/>
+    <meta name="description" content="本站为Bennu个人博客，包含技术分享、随笔等。"/>
+    <title>Sublime Text 3 + OmniMarkupPreviewer体验略记</title>
+    <link rel="Shortcut Icon" href="../assets/img/favicon.ico"/>
+
+    <!-- Bootstrap -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5兼容代码-->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+ <!--导航栏开始-->
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container">
+
+ <div class="navbar-header"> <!--导航头开始-->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html" style="color:#1E90FF;">Bennu Chan</a>
+</div><!--导航头结束-->
+
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><!--折叠导航栏-->
+<ul class="nav navbar-nav">
+<li role="presentation"><a href="../index.html">主页</a></li>
+
+  <li role="presentation" class="dropdown"><a href="../skills.html">天工开物<span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="#">Front-End</a></li>
+      <li><a href="#">Python</a></li>
+      <li><a href="#">Linux</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="#">Others</a></li>
+    </ul>
+  </li>
+
+  <li role="presentation" class="dropdown"><a href="../xigua.html">夕瓜<span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="#">随笔</a></li>
+      <li><a href="#">小品</a></li>
+      <li><a href="#">某天</a></li>
+    </ul>
+  </li>
+
+  <li role="presentation"><a href="../aboutme.html">关于我</a></li>
+  <li role="presentation"><a href="../plans.html">三部曲</a></li>
+</ul></div></div></nav>
+<!--导航栏结束-->
+<br/><br/><br/>
+
+<div class="jumbotron"><div class="container">
+<p>自从接触到Sublime Text，它就一直是我最喜欢用的编辑器之一。清爽简洁的界面、异常强大的插件扩展能力，都让我爱不释手。
+<br/>
+<p>而Markdown语言是我很久之前就听说过的轻量级标记语言，开通CSDN的第一篇博客就是转载了CSDN-Markdown编辑器的“说明书”，这也加深了我对Markdown的印象，但其实我对它仍是一无所知。今天机缘巧合，在github上看到别人的README文件做得丰富精彩，而我的却是普通纯文本枯燥无味。深入了解才发现，原来.md就是Markdown文件的后缀啊，亏我一直把它当txt文本来用。。。
+<br/>
+<p>“知道真相的我忍不住眼泪流下来……”赶紧学习学习，研究一下怎么用Sublime Text编辑Markdown吧。
+<br/>
+<p>嗯嗯，今天就来简单聊聊Sublime Text 3 + OmniMarkupPreviewer体验。
+<br/>
+<p>一.Sublime Text
+<br/>
+<p>搞双系统时折腾过一段时间，所以大概有四五次安装Sublime Text的经验，现在用Sublime Text 3。网上关于Sublime Text的介绍有很多，所以在这里也就不罗嗦了。
+<br/>
+<p>关于插件，这里有一份被总结得很好的Sublime Text 3插件入门教程：戳这里
+虽然说教程介绍的是“前端”开发常用的插件，但方法类似，无论是用哪种流行的语言开发，都能在网上找到前辈们开发的插件，或者进阶一点的，可以用Python自己写一个。所以说，Sublime Text在这方面上真的很强大。
+<br/>
+<p>二、OmniMarkupPreviewer插件
+<br/>
+<p>OmniMarkupPreviewer插件简介：作为 Sublime Text 的一款强大插件，支持将标记语言(Markdown仅是其中一种)渲染为 HTML 并在浏览器上实时预览，同时支持导出 HTML 源码文件。
+<br/>
+<p>具体的？这里有一份总结的很好的教程：戳这里
+<br/>
+<p>里面的一段话我很感兴趣：
+<p>"server_host": "192.168.1.100",
+<p>view plain copy
+<p>开启预览服务的 IP 地址, 默认为 localhost.
+<br/>
+<p>此处建议设置为本机固定 IP. 其好处在于：从局域网内的任意一台设备均可访问，可多设备同时在线，实现 一处编辑、多端预览 的效果。
+<br/>
+<p>你完全可以在 Mac 上编辑 Markdown 文档，而把 iPad 当作外接显示器来实时预览。
+<br/>
+<p>首先这个IP地址是局域网网关地址，学业不精的我天真地以为是全局IP，折腾了好一会儿。
+<p>（可以在CMD输入ipconfig来查看，是类似192.168.X.X这样的形式）
+<br/>
+<p>然后就是体验啦：
+<br/>
+<img src="../assets/img/skills_others_markdown.gif"/>
+<br/>
+<p>真的很棒！！！很赞的功能有木有！！！
+<br/>
+<p>嗯，今天就唠叨到这吧。有时间有机会要认真了解一下Markdown语法。
+
+  </div></div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="assets/js/jquery-2.2.0.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>

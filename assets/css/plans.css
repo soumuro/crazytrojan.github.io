@@ -1,0 +1,9 @@
+.fan img{width:60px;height:60px;}
+@media screen and (min-width:768px)
+{
+    .fan img{width:90px;height:90px;}
+}
+@media screen and (min-width:992px)
+{
+    .fan img{width:150px;height:150px;}
+}
