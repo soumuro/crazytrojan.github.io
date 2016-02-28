@@ -10,7 +10,7 @@
     <meta name="description" content="本站为Bennu个人博客，包含技术分享、随笔等。"/>
     <title>Bennu Chan</title>
     <link rel="Shortcut Icon" href="assets/img/favicon.ico"/>
-
+    <link href="assets/css/aboutme.css" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- HTML5兼容代码-->
@@ -68,17 +68,31 @@
 
 <div class="jumbotron"><div class="container">
 
-  <h2>关于本站</h2>
+  <h1>关于本站</h1>
   <p>本博客由<a href="#aboutme">Bennu Chan</a>基于<a href="http://www.bootcss.com/">Bootstrap</a>创建。</p>
   <a href="http://www.bootcss.com/">
+  <div class="aboutme_img">
     <img src="assets/img/aboutme_bootstrap.png" alt="Responsive image"/>
-</a>
+  </div>
+  </a>
+
+  <br/>
   <p>本站使用了很多来自<a href="http://pixabay.com/">Pixabay</a>超棒的免费素材，致谢。</p>
   <a href="https://pixabay.com/">
+  <div class="aboutme_img">
     <img src="assets/img/aboutme_pixabay.png" alt="Responsive image"/>
-</a>
-  <p>当前域名为<a href="http://bennu.fangongyuan.com">Bennu.fangongyuan.com</a>，源码储存在<a href="https://github.com/crazytrojan/crazytrojan.github.io">github</a>上。</p>
+  </div>
+  </a>
 
+  <br/>
+  <p>当前域名为<a href="http://bennu.fangongyuan.com">Bennu.fangongyuan.com</a>，源码储存在<a href="https://github.com/crazytrojan/crazytrojan.github.io">github</a>上。</p>
+  <a href="https://github.com/">
+  <div class="aboutme_img">
+    <img src="assets/img/aboutme_github.png" alt="Responsive image"/>
+  </div>
+  </a>
+
+  <br/>
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">了解更多</button>
 
@@ -91,26 +105,79 @@
         <h4 class="modal-title" id="myModalLabel">了解更多</h4>
       </div>
       <div class="modal-body">
-        暂无更多内容
+        1.部分图标来自谷歌的开源项目：<a href="http://google.github.io/material-design-icons/">Material Design icons</a><br/>
+        2.基于Bootstrap使用到了优秀的JS库：<a href="https://github.com/jquery/jquery">JQuery</a><br/>
+        3.Discovery栏目的天气背景来源于<a href="http://tympanus.net/codrops/">Codrops</a>社区的大神<a href="http://tympanus.net/codrops/author/lucasbebber/">Lucas Bebber</a>。<br/>
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
       </div>
     </div>
   </div>
-</div></p>
+</div>
 
   <br/>
-  <h2 id="aboutme">关于我</h2>
-  <p>...</p>
-  <p><a class="btn btn-primary btn-lg" href="#" role="button">了解更多</a></p>
+  <h1 id="aboutme">关于我</h1>
+  <p>Bennu Chan，中文名陈雄群。资深网民。曾以数十个网名、笔名、马甲潜水于知乎、新浪微博、百度贴吧、开源中国、CSDN、SF、Quora、Facebook等中外网站。</p>
+  <p>崇尚科学技术。热爱自由。</p>
+  <p>喜欢Python。</p>
+  <p>夕瓜是部分时候写作的笔名。也是本人开通的微信公众号名字。</p>
+  <a href="#">
+  <div class="aboutme_img">
+    <img src="assets/img/aboutme_xigua.jpg" alt="Responsive image"/>
+  </div>
+  </a>
+
+  <br/>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#aboutme_learn_more">了解更多</button>
+
+<!-- Modal -->
+<div class="modal fade" id="aboutme_learn_more" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">了解更多</h4>
+      </div>
+      <div class="modal-body">
+      呃，暂时没有额……
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
  <br/>
- <h2>联系我</h2>
+ <h1>联系我</h1>
   <p>...</p>
-  <p><a class="btn btn-primary btn-lg" href="#" role="button">了解更多</a></p>
+ <br/>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contactme_learn_more">了解更多</button>
 
-  </div></div>
+<!-- Modal -->
+<div class="modal fade" id="contactme_learn_more" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">了解更多</h4>
+      </div>
+      <div class="modal-body">
+      呃，暂时没有额……
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div></div><!--jumbotron结束-->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="assets/js/jquery-2.2.0.min.js"></script>
