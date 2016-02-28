@@ -28,7 +28,8 @@ section,
 summary
 {
     display: block;
-}audio,
+}
+audio,
 canvas,
 progress,
 video
@@ -48,7 +49,9 @@ template
 }a
 {
     background-color: transparent;
-}a:active,
+}
+.beta{color:#7788cc;font-style:italic;font-size:1em;}
+a:active,
 a:hover
 {
     outline: 0;
