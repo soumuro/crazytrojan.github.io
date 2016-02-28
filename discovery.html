@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="author" content="Bennu"/>
+    <meta name="keywords" content="Bennu 个人博客"/>
+    <meta name="description" content="本站为Bennu个人博客，包含技术分享、随笔等。"/>
+    <title>Bennu Chan</title>
+    <link rel="Shortcut Icon" href="assets/img/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/discovery.css" />
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5兼容代码-->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="demo-1">
+
+    <div class="image-preload">   <!--图片预载-->
+    <img src="assets/img/discovery/drop-color.png" alt="">
+    <img src="assets/img/discovery/drop-alpha.png" alt="">
+    <img src="assets/img/discovery/weather/texture-rain-fg.png" />
+    <img src="assets/img/discovery/weather/texture-rain-bg.png" />
+    <img src="assets/img/discovery/weather/texture-sun-fg.png" />
+    <img src="assets/img/discovery/weather/texture-sun-bg.png" />
+    <img src="assets/img/discovery/weather/texture-fallout-fg.png" />
+    <img src="assets/img/discovery/weather/texture-fallout-bg.png" />
+    <img src="assets/img/discovery/weather/texture-drizzle-fg.png" />
+    <img src="assets/img/discovery/weather/texture-drizzle-bg.png" />
+  </div>
+
+ <!--导航栏开始-->
+<nav class="navbar navbar-default navbar-fixed-top" style="background:#555560;">
+<div class="container">
+
+ <div class="navbar-header"> <!--导航头开始-->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html" style="color:#1E90FF;">Bennu Chan</a>
+</div><!--导航头结束-->
+
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><!--折叠导航栏-->
+<ul class="nav navbar-nav">
+<li role="presentation"><a href="index.html">主页</a></li>
+
+  <li role="presentation" class="dropdown"><a href="skills.html">天工开物<span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="#">Front-End</a></li>
+      <li><a href="#">Python</a></li>
+      <li><a href="#">Linux</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="#">Others</a></li>
+    </ul>
+  </li>
+
+  <li role="presentation" class="dropdown"><a href="xigua.html">夕瓜<span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="#">随笔</a></li>
+      <li><a href="#">小品</a></li>
+      <li><a href="#">某天</a></li>
+    </ul>
+  </li>
+
+  <li role="presentation"><a href="aboutme.html">关于我</a></li>
+  <li role="presentation" class="active"><a href="discovery.html">Discovery</a></li>
+</ul></div></div></nav>
+<!--导航栏结束-->
+
+<div style="position:absolute;top:0px;">
+  <header class="codrops-header">
+    <div class="container">
+      <h1><script type="text/javascript" src="http://www.wsxa.com/weather/?id=101280101&typestr=3" charset="gb2312"></script>
+          <script type="text/javascript" >
+            document.write(citystr,weatherstr,wendustr);
+            weatherstr = weatherstr.replace( /^\s+|\s+$/g, "" );
+            setTimeout(function(){
+              if(weatherstr=="晴"){window.location.href="#slide-3";}
+            },3000);
+          </script>
+      </h1>
+    </div>
+
+    <div class="container">
+      <div><a href="discovery/plans.html">网站日志</a></div><br/>
+      <div><a href="discovery/plans.html">三部曲</a></div><br/>
+      <div><a href="discovery/plans.html">文章目录</a></div><br/>
+      <div><a href="discovery/plans.html">网站地图</a></div><br/>
+    </div>
+  </header>
+
+  <div class="slideshow">
+      <canvas width="1" height="1" id="container" style="position:absolute"></canvas>
+      <!-- Heavy Rain -->
+      <div class="slide" id="slide-1" data-weather="rain"></div>
+      <!-- Drizzle -->
+      <div class="slide" id="slide-2" data-weather="drizzle"></div>
+      <!-- Sunny -->
+      <div class="slide" id="slide-3" data-weather="sunny"></div>
+      <!-- Fallout (greenish overlay with slightly greenish/yellowish drops) -->
+      <div class="slide" id="slide-4" data-weather="fallout"></div>
+      <!-- Heavy rain -->
+      <div class="slide" id="slide-5" data-weather="storm"></div>
+
+
+      <nav class="slideshow__nav">
+        <a class="nav-item" href="#slide-1"><i class="icon icon--rainy"></i></a>
+        <a class="nav-item" href="#slide-2"><i class="icon icon--drizzle"></i></a>
+        <a class="nav-item" href="#slide-3"><i class="icon icon--sun"></i></a>
+        <a class="nav-item" href="#slide-4"><i class="icon icon--radioactive"></i></a>
+        <a class="nav-item" href="#slide-5"><i class="icon icon--storm"></i></a>
+      </nav>
+  </div>
+  <p class="nosupport">抱歉，您所使用的浏览器无法显示当前页面的某些元素，推荐您使用最新的Chrome浏览器!</p>
+</div>
+  <!-- /container -->
+
+  <script src="assets/js/discovery.js"></script>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="assets/js/jquery-2.2.0.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
