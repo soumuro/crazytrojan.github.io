@@ -13,6 +13,7 @@
 
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/skills.css" rel="stylesheet">
     <!-- HTML5兼容代码-->
     <!--[if lt IE 9]>
       <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -39,23 +40,23 @@
 <ul class="nav navbar-nav">
 <li role="presentation"><a href="index.html">主页</a></li>
 
-  <li role="presentation" class="dropdown active"><a href="skills.html">天工开物<span class="caret"></span>
+  <li role="presentation" class="dropdown"><a href="skills.html">天工开物<span class="caret"></span>
     </a>
     <ul class="dropdown-menu">
-      <li><a href="#">Front-End</a></li>
-      <li><a href="#">Python</a></li>
-      <li><a href="#">Linux</a></li>
+      <li><a href="skills.html#Front-End">Front-End</a></li>
+      <li><a href="skills.html#Python">Python</a></li>
+      <li><a href="skills.html#Linux">Linux</a></li>
       <li role="separator" class="divider"></li>
-      <li><a href="#">Others</a></li>
+      <li><a href="skills.html#Others">Others</a></li>
     </ul>
   </li>
 
   <li role="presentation" class="dropdown"><a href="xigua.html">夕瓜<span class="caret"></span>
     </a>
     <ul class="dropdown-menu">
-      <li><a href="#">随笔</a></li>
-      <li><a href="#">小品</a></li>
-      <li><a href="#">某天</a></li>
+      <li><a href="xigua.html#writing">随笔</a></li>
+      <li><a href="xigua.html#articles">小品</a></li>
+      <li><a href="xigua.html#sentences">某天</a></li>
     </ul>
   </li>
 
@@ -65,25 +66,52 @@
 <!--导航栏结束-->
 <br/><br/><br/>
 
-<div class="jumbotron"><div class="container">
-<span class="label label-default">Default</span>
-<span class="label label-primary">Primary</span>
-<span class="label label-success">Success</span>
-<span class="label label-info">Info</span>
-<span class="label label-warning">Warning</span>
-<span class="label label-danger">Danger</span>
-<img src="assets/img/study.png" class="img-responsive" alt="Responsive image" style="float:right;">
-  <h1>科学技术是第一生产力！!</h1>
-  <p>...</p>
-  <p><a class="btn btn-primary btn-lg" href="#" role="button">了解更多</a></p>
+<div class="container bs-docs-container"><!--正文容器-->
+  <div class="row"><!--正文一行两侧-->
+ <div class="col-md-9" role="main"><!--正文左侧栏开始-->
+      <div class="skills_title">
+        <h1><span id="update_img" class="skills_img"><img src="assets/img/skills.png"/></span>&nbsp天工开物</h1>
+      </div>
+      <hr/>
 
-  <h2>最近更新</h2>
-  <p>前言：最迷人最不可思议的莫过于我们神秘的宇宙本身。本人愚钝，并不能独立思考洞察宇宙的一二，但又何其幸生在了这个时代。相对论与量子力学的提出都已百年，越来越多的理论也正在完善中，我得以在前人铺好的路上略窥一二。写这些文章，算是对自己思维锻炼的一个记录，也算是满足自己好奇心的一点努力的见证。</p>
-<p>
-我并不能保证我写的都是正确的。出错，也许是我的逻辑不够缜密，没有完全理解前人智慧的结晶。还也许，我们思考的一切所基于的那个前提，便是错的。甚至，也许宇宙没有真相……</p>
-  </div></div>
+      <div class="panel panel-success">
+  <!-- Default panel contents -->
+  <div class="panel-heading">全部 | 点击标题阅读全文</div>
+  <div class="panel-body">
+    <h4>当前页面包括天工开物内的全部内容。它们分别来自Front-End、Python、Linux和Others。</h4>
+  </div>
 
-<img src="assets/img/markdown.gif" class="img-responsive" alt="Responsive image">
+  <!-- List group -->
+  <ul class="list-group">
+    <li class="list-group-item"><span class="skills_title"><a href="#sentences"><img src="assets/img/skills_python.png"/>用Python写爬虫（一）</a></span><span class="skills_sources">来自<a href="#Python">Python</a>&nbsp2015/2/29</span></li>
+
+    <li class="list-group-item"><span class="skills_title"><a href="#sentences"><img src="assets/img/skills_front_end.png"/>Sublime Text 3 + OmniMarkupPreviewer体验略记</a></span><span class="skills_sources">来自<a href="#Front-End">Front-End</a>&nbsp2015/2/29</span></li>
+
+    <li class="list-group-item"><span class="skills_title"><a href="#sentences"><img src="assets/img/skills_others.png"/>JavaWebAccounts:基于Tomcat的简易账号管理系统</a></span><span class="skills_sources">来自<a href="#Others">Others</a>&nbsp2015/2/29</span></li>
+
+    <li class="list-group-item"><span class="skills_title"><a href="#sentences"><img src="assets/img/skills_linux.png"/>安装libjpeg库后提示libjpeg.so.8不存在（linux环境）</a></span><span class="skills_sources">来自<a href="#Linux">Linux</a>&nbsp2015/2/29</span></li>
+
+    <li class="list-group-item"><span class="skills_title"><a href="#sentences"><img src="assets/img/skills_python.png"/>人生苦短，我用Python</a></span><span class="skills_sources">来自来自<a href="#Python">Python</a>&nbsp2015/2/29</span></li>
+
+    <li class="list-group-item"><span class="skills_title"><a href="#sentences"><img src="assets/img/skills_others.png"/>升级到Windows10</a></span><span class="skills_sources">来自<a href="#Others">Others</a>&nbsp2015/2/29</span></li>
+
+  </ul>
+</div>
+
+
+    </div><!--正文左侧栏结束-->
+    <div class="col-md-3" role="complementary"><!--正文右侧栏开始-->
+      <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
+        <ul class="nav bs-docs-sidenav skills_catalog">
+         <li class="active"><a href="#Front-End">Front-End&nbsp<span class="badge">1</span></a></li>
+         <li class=""><a href="#Python">Python&nbsp<span class="badge">1</span></a></li>
+         <li class=""><a href="#Linux">Linux&nbsp<span class="badge">1</span></a></li>
+         <li class=""><a href="#Others">Others&nbsp<span class="badge">1</span></a></li>
+        </ul>
+      </nav>
+    </div><!--正文右侧栏结束-->
+  </div>
+</div><!--正文容器结束-->
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
