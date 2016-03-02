@@ -34,17 +34,19 @@ hr{width:50%;}
 
 .article_title{color:#222;}
 .article_date{position:absolute;right:15px;color:#aaa;}
+.media a:hover{text-decoration:none;color:#1E90FF;}
 
 .update_articles{border:2px solid #eee;padding:10px;margin-top:10px;}
 .article_img{padding:auto 0px;}
 .article_img img{width:90px;height:90px;}
 .article_text{position:absolute;float:right;padding:20px;margin:auto 10px;}
-.foot{background:#ccc;padding:50px;}
-#copyright {font-size: 20px;text-align:center;background:#333;color:#ccc;padding:10px;}
+.foot{background:#ddd;padding:50px;}
+#copyright {font-size: 15px;text-align:center;background:#444;color:#ccc;padding:10px;}
 @media screen and (min-width:768px)
 {
     #update_img img{width:50px;height:50px;}
     #hello_img img{width:90px;height:90px;}
+    #copyright {font-size: 20px;}
     .article_img img{width:150px;height:150px;}
     .back-to-top{display:block;}
     .masthead h1
