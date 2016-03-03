@@ -128,8 +128,34 @@ if(browser.versions.mobile){//判断是否是移动设备打开。browser代码�
             document.write(citystr,weatherstr,wendustr);
             weatherstr = weatherstr.replace( /^\s+|\s+$/g, "" );
             setTimeout(function(){
-              if(weatherstr=="晴"){window.location.href="#slide-3";}
-            },3000);
+              switch(weatherstr){
+              case "大雨":
+              case "暴雨":window.location.href="#slide-1";break;
+
+              case "小雨":
+              case "晴转小雨":
+              case "阴转小雨":
+              case "多云转小雨":
+              case "阵雨":window.location.href="#slide-2";break;
+
+              case "晴":
+              case "阴":
+              case "多云":
+              case "晴转阴":
+              case "阴转晴":
+              case "多云转晴":
+              case "晴转多云":
+              case "多云转阴":
+              case "阴转多云":
+              case "小雨转晴":
+              case "小雨转阴":
+              case "小雨转多云":window.location.href="#slide-3";break;
+
+              case "大暴雨":window.location.href="#slide-4";break;
+
+              case "雷阵雨":
+              case "雷暴雨":window.location.href="#slide-5";break;
+            }},3000);
           </script>
       </h1>
     </div>
