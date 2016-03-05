@@ -18,6 +18,13 @@
       <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script type="text/javascript">
+      function img_zoom(obj, sType) {
+        var oDiv = document.getElementById(obj);
+        if (sType == 'show') { oDiv.style.display = 'block';}
+        if (sType == 'hide') { oDiv.style.display = 'none';}
+      }
+    </script>
   </head>
 
   <body>
@@ -66,7 +73,7 @@
 <!--导航栏结束-->
 <br/><br/><br/>
 
-<div class="jumbotron"><div class="container">
+<div class="jumbotron"><div class="container container_background">
 
   <h1>关于本站</h1>
   <p>本博客由<a href="#aboutme">Bennu Chan</a>基于<a href="http://www.bootcss.com/">Bootstrap</a>创建。</p>
@@ -94,7 +101,7 @@
 
   <br/>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">了解更多</button>
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">了解更多</button></div>
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -118,21 +125,23 @@
 </div>
 
   <br/>
+  <div class="container container_background">
   <h1 id="aboutme">关于我</h1>
-  <p>Bennu Chan，中文名陈雄群。资深网民。曾以数十个网名、笔名、马甲潜水于知乎、新浪微博、百度贴吧、开源中国、CSDN、SF、Quora、Facebook等中外网站。</p>
-  <p>崇尚科学技术。热爱自由。</p>
-  <p>喜欢Python。</p>
-  <p>夕瓜是部分时候写作的笔名。也是本人开通的微信公众号名字。</p>
+  <p>· Bennu Chan，中文名陈雄群。资深网民。曾以数十个网名、笔名、马甲潜水于知乎、新浪微博、百度贴吧、开源中国、CSDN、SF、Quora、Facebook等中外网站。</p>
+  <p>· 崇尚科学技术。热爱自由。</p>
+  <p>· 喜欢Python。</p>
+  <p>· 夕瓜是部分时候写作的笔名。也是本人开通的微信公众号名字。</p>
   <a href="#">
   <div class="aboutme_img">
-    <img src="assets/img/aboutme_xigua.jpg" alt="Responsive image"/>
+    <img src="assets/img/aboutme_xigua.png" alt="Responsive image" onmouseover="img_zoom('xigua', 'show');" onmouseout="img_zoom('xigua', 'hide')"/>
+  </div>
+  <div style="display:none;" id="xigua"><img src="assets/img/aboutme_xigua.png" alt="Responsive image"/>
   </div>
   </a>
 
   <br/>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#aboutme_learn_more">了解更多</button>
-
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#aboutme_learn_more">了解更多</button></div>
 <!-- Modal -->
 <div class="modal fade" id="aboutme_learn_more" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
@@ -151,33 +160,15 @@
   </div>
 </div>
 
-
  <br/>
+ <div class="container container_background">
  <h1>联系我</h1>
-  <p>...</p>
+  <p>ibennu@163.com</p>
+  <p><a href="http://weibo.com/xxjkcxq ">新浪微博 君子兰2017</a></p>
  <br/>
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contactme_learn_more">了解更多</button>
 
-<!-- Modal -->
-<div class="modal fade" id="contactme_learn_more" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">了解更多</h4>
-      </div>
-      <div class="modal-body">
-      呃，暂时没有额……
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-      </div>
-    </div>
-  </div>
-</div>
 
-  </div></div><!--jumbotron结束-->
+  </div><!--jumbotron结束-->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="assets/js/jquery-2.2.0.min.js"></script>

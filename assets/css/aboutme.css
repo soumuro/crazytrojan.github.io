@@ -1,5 +1,5 @@
 .aboutme_img img{width:60px;height:60px;}
-
+.container_background{background-color:#e6e6ee;margin-bottom:40px;padding-bottom:20px;}
 @media screen and (min-width:768px)
 {
     .aboutme_img img{width:90px;height:90px;}
