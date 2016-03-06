@@ -75,8 +75,9 @@
 
 <div class="jumbotron"><div class="container container_background">
 
+  <div class="col-md-8" role="main"><!--左侧栏开始-->
   <h1>关于本站</h1>
-  <p>本博客由<a href="#aboutme">Bennu Chan</a>基于<a href="http://www.bootcss.com/">Bootstrap</a>创建。</p>
+  <p>1.本博客由<a href="#aboutme">Bennu Chan</a>基于<a href="http://www.bootcss.com/">Bootstrap</a>创建。</p>
   <a href="http://www.bootcss.com/">
   <div class="aboutme_img">
     <img src="assets/img/aboutme_bootstrap.png" alt="Responsive image"/>
@@ -84,7 +85,7 @@
   </a>
 
   <br/>
-  <p>本站使用了很多来自<a href="http://pixabay.com/">Pixabay</a>超棒的免费素材，致谢。</p>
+  <p>2.本站使用了很多来自<a href="http://pixabay.com/">Pixabay</a>超棒的免费素材，致谢。</p>
   <a href="https://pixabay.com/">
   <div class="aboutme_img">
     <img src="assets/img/aboutme_pixabay.png" alt="Responsive image"/>
@@ -92,7 +93,7 @@
   </a>
 
   <br/>
-  <p>当前域名为<a href="http://bennu.fangongyuan.com">Bennu.fangongyuan.com</a>，源码储存在<a href="https://github.com/crazytrojan/crazytrojan.github.io">github</a>上。</p>
+  <p>3.当前域名为<a href="http://bennu.fangongyuan.com">Bennu.fangongyuan.com</a>，源码储存在<a href="https://github.com/crazytrojan/crazytrojan.github.io">github</a>上。</p>
   <a href="https://github.com/">
   <div class="aboutme_img">
     <img src="assets/img/aboutme_github.png" alt="Responsive image"/>
@@ -100,8 +101,10 @@
   </a>
 
   <br/>
+  <p>4.网站日志：<a href="discovery/site_log.html">记录当前网站发展历程</a></p>
+
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">了解更多</button></div>
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">了解更多</button></div><!--左侧栏结束-->
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -115,6 +118,7 @@
         1.部分图标来自谷歌的开源项目：<a href="http://google.github.io/material-design-icons/">Material Design icons</a><br/>
         2.基于Bootstrap使用到了优秀的JS库：<a href="https://github.com/jquery/jquery">JQuery</a><br/>
         3.Discovery栏目的天气背景来源于<a href="http://tympanus.net/codrops/">Codrops</a>社区的大神<a href="http://tympanus.net/codrops/author/lucasbebber/">Lucas Bebber</a>。<br/>
+        4.使用社会化评论系统：<a href="http://changyan.kuaizhan.com/">搜狐畅言</a><br/>
 
       </div>
       <div class="modal-footer">
@@ -124,6 +128,19 @@
   </div>
 </div>
 
+  <div class="col-md-4" role="complementary"><!--右侧栏--><br/>
+  <h2>调查</h2>
+  <div style="overflow:hidden">
+    <div id="cyPoll" role="cylabs" data-use="poll_new" data-pollId="1302" sid="2016030601"></div>
+  </div><!--投票-->
+  <!-- 代码2：用来读取评论框配置，此代码需放置在代码1之后。 -->
+<!-- 如果当前页面有评论框，代码2请勿放置在评论框代码之前。 -->
+<!-- 如果页面同时使用多个实验室项目，以下代码只需要引入一次，只配置上面的div标签即可 -->
+<script type="text/javascript" charset="utf-8" src="http://changyan.itc.cn/js/??lib/jquery.js,changyan.labs.js?appid=cyshi3bxT"></script>
+  </div>
+
+</div><!--第一个container结束-->
+
   <br/>
   <div class="container container_background">
   <h1 id="aboutme">关于我</h1>
@@ -132,10 +149,10 @@
   <p>· 喜欢Python。</p>
   <p>· 夕瓜是部分时候写作的笔名。也是本人开通的微信公众号名字。</p>
   <a href="#">
-  <div class="aboutme_img">
-    <img src="assets/img/aboutme_xigua.png" alt="Responsive image" onmouseover="img_zoom('xigua', 'show');" onmouseout="img_zoom('xigua', 'hide')"/>
+  <div class="aboutme_img" id="xigua_small">
+    <img src="assets/img/aboutme_xigua.png" alt="Responsive image" onmouseover="img_zoom('xigua', 'show');img_zoom('xigua_small', 'hide');"/>
   </div>
-  <div style="display:none;" id="xigua"><img src="assets/img/aboutme_xigua.png" alt="Responsive image"/>
+  <div style="display:none;" id="xigua"><img src="assets/img/aboutme_xigua.png" alt="Responsive image" onmouseout="img_zoom('xigua', 'hide');img_zoom('xigua_small', 'show');"/>
   </div>
   </a>
 
@@ -148,10 +165,11 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">了解更多</h4>
+        <h4 class="modal-title" id="myModalLabel">关于我</h4>
       </div>
       <div class="modal-body">
-      呃，暂时没有额……
+      欢迎关注“夕瓜”微信公众号。<br/>
+      <img src="assets/img/aboutme_xigua.png" alt="Responsive image" class="img-responsive"/>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
@@ -164,9 +182,10 @@
  <div class="container container_background">
  <h1>联系我</h1>
   <p>ibennu@163.com</p>
-  <p><a href="http://weibo.com/xxjkcxq ">新浪微博 君子兰2017</a></p>
+  <a href="http://weibo.com/xxjkcxq ">
+  <span class="aboutme_img"><img src="assets/img/aboutme_weibo.png" alt="Responsive image" class="img-responsive"/></span></a>
  <br/>
-
+ </div>
 
   </div><!--jumbotron结束-->
 

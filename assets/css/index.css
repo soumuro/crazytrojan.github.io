@@ -29,6 +29,9 @@ hr{width:50%;}
 #update_img img{width:30px;height:30px;}
 #hello_img img{width:60px;height:60px;}
 
+ #ball{height:300px;width:auto; position:relative; margin:10px auto;}
+ #ball a{position:absolute;top:0px;left:0px;font-weight:bold;padding:3px 6px; color:black; text-decoration: none;}
+ #ball a:hover{border:1px solid #eee;background:#ccc;border-radius:5px;}
 
 .back-to-top{display:none;position:fixed;bottom:50px;right:30px;}
 
