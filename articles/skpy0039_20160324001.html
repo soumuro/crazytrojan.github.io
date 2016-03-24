@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="author" content="Bennu"/>
+    <meta name="keywords" content="Bennu 个人博客"/>
+    <meta name="description" content="本站为Bennu个人博客，包含技术分享、随笔等。"/>
+    <title>Sublime Text 3 + OmniMarkupPreviewer体验略记</title>
+    <link rel="Shortcut Icon" href="../assets/img/favicon.ico"/>
+
+    <!-- Bootstrap -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5兼容代码-->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+ <!--导航栏开始-->
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container">
+
+ <div class="navbar-header"> <!--导航头开始-->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html" style="color:#1E90FF;">Bennu Chan</a>
+</div><!--导航头结束-->
+
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><!--折叠导航栏-->
+<ul class="nav navbar-nav">
+<li role="presentation"><a href="../index.html">主页</a></li>
+
+  <li role="presentation" class="dropdown"><a href="../skills.html">天工开物<span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="../skills.html#Front-End">Front-End</a></li>
+      <li><a href="../skills.html#Python">Python</a></li>
+      <li><a href="../skills.html#Linux">Linux</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="../skills.html#Others">Others</a></li>
+    </ul>
+  </li>
+
+  <li role="presentation" class="dropdown"><a href="../xigua.html">夕瓜<span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="../xigua.html#writing">随笔</a></li>
+      <li><a href="../xigua.html#articles">小品</a></li>
+      <li><a href="../xigua.html#sentences">某天</a></li>
+    </ul>
+  </li>
+
+  <li role="presentation"><a href="../aboutme.html">关于我</a></li>
+  <li role="presentation"><a href="../discovery.html">Discovery <span class="beta">Beta</span></a></li>
+</ul></div></div></nav>
+<!--导航栏结束-->
+<br/><br/><br/>
+
+<div class="jumbotron"><div class="container">
+<h2>[自然语言处理]Python3下的nltk与nltk_data安装（Ubuntu环境）</h2><br/>
+<p>测试环境：Ubuntu Kylin 14.04
+<p>Python版本：3.4.3
+<br/>
+<p>在使用Python强大的第三方库nltk进行一些自然语言处理工作的时候遇到了一些困难，折腾一番总算解决。现在在这里记录一下，当作备忘。
+<br/>
+<p>网上找到挺多安装nltk的教程，但经测试，好像都是适用于Python2的，对于Python3,就勉为其难了。这里的主要问题是，前辈们分享的nltk_data包是不兼容Python3的。
+<br/>
+<p>所以我的解决方案是：
+<p>到https://github.com/nltk/nltk_data下载gh-pages分支，里面的Packages就是我们要的资源。（注：截至2016年3月24日时本方案仍有效）
+<br/>
+<p>详细情况记录如下：
+<p>1.安装nltk。截至今天，安装的是nltk3.2，在有pip这些工具的情况下，安装这些库变得非常简单：
+<p>pip install nltk
+<p>另外官方的安装说明还附带了numpy，一个“赛Matlab的Python开源的数值计算扩展库”，说不定以后用得上：
+<p>pip install numpy
+<br/>
+<p>2.安装nltk_data。nltk_data是必要的nltk数据包，实现分词，词性标注，命名实体识别等功能都要用到这个数据包：
+<p>进入Python Shell后只需要两句就可以进入nltk_data的下载
+<p>$python
+<p>>>>import nltk
+<p>>>>nltk.download()
+<p>然后就可以按提示进行了。
+<br/>
+<p>重点是，下载会很慢或干脆卡住。所以需要手动下载nltk_data包。
+<br/>
+<p>下载方法：到https://github.com/nltk/nltk_data下载gh-pages分支，里面的Packages就是我们要的资源。
+<br/>
+<p>里面有部分是压缩包，需要解压。
+<br/>
+<p>将Packages文件夹改名为nltk_data，放在以下任一路径：
+<p>/usr/lib
+<p>/usr/local/lib
+<p>用户目录（比方说可能是/home/bennu）
+<p>其他nltk可以识别的路径，出错时有可能会在出错信息看到。
+<br/>
+<p>为了方便，我已将此文件包打包处理好上传到百度网盘。
+<p>写这篇东西时百度网盘崩了，暂时还没上传。。。
+<br/>
+<p>剩下就是继续努力学习了～
+
+<!--打分版，用户可以对当前新闻、游戏或者应用等进行1-5级的评分-->
+<div id="SOHUCS" sid="2016032401"></div>
+<script charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+    window._config = { showScore: true };
+    window.changyan.api.config({
+        appid: 'cyshi3bxT',
+        conf: 'prod_4306641fa3d3f5a301a598999cbf0201'
+    });
+</script>
+
+  </div></div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="assets/js/jquery-2.2.0.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
